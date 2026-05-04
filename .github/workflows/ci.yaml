@@ -6,7 +6,6 @@ on:
       - main
 
 jobs:
-  
   prettier:
     runs-on: ubuntu-latest
     strategy:
@@ -21,12 +20,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run format:check
-  
+
   lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: 
+        node-version:
           - 18.x
           - 20.x
           - 22.x
