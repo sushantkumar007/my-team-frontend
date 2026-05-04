@@ -2,14 +2,16 @@ name: My team frontend
 
 on:
   pull_request:
-    branches: ["main"]
-    
+    branches:
+      - main
+
 jobs:
   prettier:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version:
+          - 18.x
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
