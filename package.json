@@ -19,9 +19,14 @@
     ]
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
     "@tailwindcss/vite": "^4.2.4",
+    "axios": "^1.13.2",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-hook-form": "^7.73.1",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.14.2",
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
@@ -36,7 +41,6 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
     "prettier": "^3.8.3",
-    "vite": "^8.0.9",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite": "^8.0.9"
   }
 }
